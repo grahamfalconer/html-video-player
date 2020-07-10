@@ -1,10 +1,21 @@
 console.log("Javascript is enabled")
 
-document.addEventListener('keydown', switchVideo);
+document.addEventListener('keydown', playVideo);
+document.addEventListener('keyup', stopVideo)
 
-function switchVideo(e) {
+function playVideo(e) {
   if(e.code == 'Space'){
-    console.log("success")
+    console.log("successful play")
+    turtleVideo.play();
+    barleyVideo.play();
+  }
+}
+
+function stopVideo(e) {
+  if(e.code == 'Space'){
+    console.log("successful pause")
+    turtleVideo.pause();
+    barleyVideo.pause();
   }
 }
 
