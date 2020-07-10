@@ -1,2 +1,2 @@
 # html-video-player
-Video player
+A custom html video player.
